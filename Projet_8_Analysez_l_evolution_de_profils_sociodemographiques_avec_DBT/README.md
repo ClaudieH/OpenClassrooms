@@ -1,5 +1,21 @@
 # 🎓 Projet 8 - Analysez l’évolution des profils sociodémographiques avec DBT
+
+----------------------
+ La documentation complète du projet, générée automatiquement avec DBT Docs, est accessible ici :
  
+🔗 [Consulter la documentation DBT](https://claudieh.github.io/dbt-docs/#!/overview)
+ 
+Cette documentation présente :
+ 
+- Le lineage des modèles
+- Les sources de données
+- Les transformations réalisées
+- Les dépendances entre modèles
+- Les tests de qualité des données
+- Les descriptions des tables et des colonnes
+
+-----------------
+
 ## Contexte
  
 Dans le cadre de la formation Data Analyst OpenClassrooms, j'ai intégré fictivement l'équipe Data d'OpenClassrooms afin d'étudier l'évolution du profil sociodémographique des apprenants inscrits aux parcours Data sur une période de quatre ans.
