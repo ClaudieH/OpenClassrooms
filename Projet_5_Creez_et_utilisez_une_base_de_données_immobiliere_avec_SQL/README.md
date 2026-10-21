@@ -1,161 +1,223 @@
-# 🏠 Projet 5 - Créez et utilisez une base de données immobilière avec SQL
- 
-## Contexte
- 
-Dans le cadre de la formation Data Analyst OpenClassrooms, j'ai intégré fictivement l'équipe Data de Laplace Immo, un réseau national d'agences immobilières.
- 
-L'entreprise souhaite exploiter davantage les données immobilières afin de mieux comprendre le marché et développer à terme des modèles permettant d'améliorer l'accompagnement des clients dans leurs projets immobiliers.
- 
-Dans ce contexte, j'ai été chargée de concevoir et d'organiser une base de données relationnelle permettant de centraliser des données immobilières, démographiques et géographiques issues de différentes sources publiques.
- 
+# Conception et exploitation d'une base de données immobilière décisionnelle 
+
+> **Compétences mobilisées :** SQL • Modélisation de données • Data Architecture • Gouvernance des données • Data Quality • Analyse immobilière • Data Management • Business Analysis
+
+## Présentation du projet
+
+Dans le cadre d’une mission de conseil réalisée pour **Laplace Immo**, réseau national d’agences immobilières, j’ai été chargé de concevoir une base de données relationnelle permettant de centraliser, structurer et exploiter des données immobilières issues de sources publiques.
+
+L’objectif était de construire un socle de données fiable permettant aux équipes métier de mieux comprendre les dynamiques du marché immobilier et de préparer le développement futur de modèles prédictifs d’aide à la décision.
+
 ---
- 
-## 🎯 Objectifs du projet
- 
-### Conception de la base de données
- 
-- Analyser plusieurs jeux de données provenant de sources ouvertes.
-- Construire un dictionnaire des données documentant les différentes informations à stocker.
-- Concevoir un schéma relationnel répondant aux besoins métier.
-- Identifier les entités, les relations et les cardinalités.
-- Normaliser la base de données conformément à la troisième forme normale (3NF).
-- Vérifier la conformité des données vis-à-vis du RGPD.
- 
-### Mise en œuvre de la base
- 
-- Préparer la structure de la base de données.
-- Créer les tables et leurs relations.
-- Garantir l'intégrité et la cohérence des données.
-- Contrôler la qualité des données intégrées.
- 
-### Analyse des données immobilières
- 
-- Écrire des requêtes SQL répondant aux besoins métier.
-- Extraire des indicateurs pertinents sur le marché immobilier.
-- Faciliter l'analyse des transactions immobilières.
-- Fournir des informations exploitables pour les agences du réseau.
- 
+
+## Contexte et enjeu métier
+
+Le marché immobilier génère de grands volumes de données provenant de nombreuses sources externes :
+
+- Transactions immobilières
+- Données démographiques
+- Données territoriales
+- Référentiels géographiques
+
+Ces données sont souvent hétérogènes et difficilement exploitables en l’état.
+
+Laplace Immo souhaite mettre en place une architecture de données cohérente afin de :
+
+- Centraliser l’information
+- Garantir la qualité et la cohérence des données
+- Faciliter les analyses immobilières
+- Produire des indicateurs de marché fiables
+- Préparer le développement futur de modèles de valorisation immobilière.
+
 ---
- 
-## 🛠️ Outils utilisés
- 
-### Bases de données
- 
+
+## Problématique
+
+**Comment concevoir une base de données relationnelle robuste permettant de transformer plusieurs sources de données immobilières en un outil d'aide à la décision exploitable par les agences du réseau ?**
+
+---
+
+## Sources de données
+
+La base a été construite à partir de plusieurs jeux de données open data :
+
+### Données immobilières
+
+- DVF (Demandes de Valeurs Foncières)
+- Transactions immobilières
+- Caractéristiques des biens
+
+### Données démographiques
+
+- Données communales de l'INSEE
+- Population des communes
+
+### Données territoriales
+
+- Référentiel géographique national
+- Régions
+- Départements
+- Communes
+
+Ces différentes sources ont été consolidées dans un modèle de données unique.
+
+---
+
+## Environnement technique
+
+### Base de données
+
 - SQL
- 
-### Modélisation de données
- 
+
+### Modélisation
+
 - SQL Power Architect
-- Modèle Entité-Association (MCD)
+- Modèle Conceptuel de Données (MCD)
 - Schéma relationnel
 - Normalisation 3NF
-- Dictionnaire des données
- 
-### Sources de données
- 
-- Données DVF (Demandes de Valeurs Foncières)
-- Données INSEE
-- Données géographiques issues de data.gouv.fr
- 
+
 ### Documentation
- 
-- PowerPoint
-- Diagrammes relationnels
-- Documentation fonctionnelle
- 
----
- 
-## 📈 Réalisations
- 
-### Construction du dictionnaire des données
- 
-- Analyse des différents jeux de données sources.
-- Identification des attributs clés.
-- Description et documentation des données.
-- Définition des règles de gestion.
- 
-### Conception de la base de données
- 
-- Création du Modèle Conceptuel de Données (MCD).
-- Construction du schéma relationnel.
-- Définition des clés primaires et étrangères.
-- Identification des relations entre les entités.
-- Normalisation de la base jusqu'à la troisième forme normale (3NF).
-- Modélisation réalisée avec SQL Power Architect.
- 
-### Préparation de la base
- 
-- Création de la structure des tables.
-- Vérification de la cohérence des données.
-- Contrôle de l'intégrité référentielle.
-- Validation de la conformité du modèle de données.
- 
-### Exploitation de la base
- 
-- Création de requêtes SQL d'analyse.
-- Utilisation de jointures entre plusieurs tables.
-- Agrégation des données.
-- Extraction d'indicateurs immobiliers pertinents.
-- Présentation des résultats aux équipes métier.
- 
----
- 
-## ✅ Compétences acquises
- 
-### SQL
- 
-- Création et exécution de requêtes SQL complexes.
-- Réalisation de jointures entre plusieurs tables.
-- Utilisation des fonctions d'agrégation.
-- Utilisation d'alias et de sous-requêtes.
-- Extraction de données répondant à des problématiques métier.
- 
-### Modélisation de données
- 
-- Concevoir une base de données relationnelle.
-- Identifier les entités et leurs relations.
-- Définir des cardinalités.
-- Appliquer les règles de normalisation jusqu'à la 3NF.
-- Construire un schéma relationnel avec SQL Power Architect.
- 
-### Gouvernance des données
- 
-- Construire un dictionnaire des données.
-- Vérifier la qualité et la cohérence des données.
-- Contrôler la conformité RGPD.
-- Documenter les règles de gestion.
- 
-### Gestion de bases de données
- 
-- Définition des clés primaires et étrangères.
-- Contrôle de l'intégrité référentielle.
-- Structuration et organisation des données.
-- Validation des données avant exploitation.
- 
-### Analyse métier
- 
-- Comprendre les enjeux du marché immobilier.
-- Traduire un besoin métier en modèle de données.
-- Produire des indicateurs d'aide à la décision.
-- Valoriser les données via des requêtes SQL adaptées.
- 
----
- 
-## 📂 Livrables
- 
+
 - Dictionnaire des données
-- Schéma relationnel normalisé (3NF)
-- Modèle de données réalisé avec SQL Power Architect
-- Scripts SQL
-- Support de présentation
 - Documentation fonctionnelle
- 
+- Présentation métier
+
 ---
- 
-## 🚀 Résultat
- 
-Ce projet m'a permis de renforcer mes compétences en SQL et en modélisation de données à travers une problématique concrète du secteur immobilier.
- 
-J'ai appris à concevoir une base de données relationnelle normalisée, à documenter les données à l'aide d'un dictionnaire de données et à exploiter efficacement les informations grâce à des requêtes SQL répondant à des besoins métier.
- 
-Cette expérience a également renforcé ma conviction qu'une analyse pertinente repose avant tout sur une donnée correctement structurée, documentée et gouvernée.
+
+## Démarche de conseil
+
+### 1. Analyse du besoin métier
+
+Identification des besoins des équipes immobilières :
+
+- Suivi de l'évolution des prix
+- Analyse géographique des transactions
+- Étude des volumes de ventes
+- Comparaison des marchés régionaux
+- Préparation de futurs modèles de prévision
+
+### 2. Gouvernance et compréhension des données
+
+Construction d'un dictionnaire permettant de documenter :
+
+- Les attributs métiers
+- Les règles de gestion
+- Les règles de calcul
+- Les contraintes de qualité des données
+
+### 3. Modélisation de la base
+
+Conception d'un modèle relationnel en identifiant :
+
+- Les entités
+- Les relations
+- Les cardinalités
+- Les clés primaires
+- Les clés étrangères
+
+Le modèle a ensuite été normalisé jusqu'à la troisième forme normale (3NF) afin de garantir la cohérence et de limiter la redondance des données.
+
+### 4. Mise en conformité
+
+Vérification :
+
+- De l'intégrité référentielle
+- De la cohérence des données
+- Du respect des principes RGPD
+- Des règles de gouvernance des données
+
+### 5. Exploitation analytique
+
+Développement de requêtes SQL destinées à répondre à des problématiques métier concrètes :
+
+- Analyse des ventes
+- Évolution des prix
+- Comparaisons régionales
+- Analyse des transactions
+- Classements immobiliers
+
+---
+
+## Architecture de données réalisée
+
+Le modèle final repose sur plusieurs entités principales :
+
+### Région
+
+Informations administratives régionales.
+
+### Commune
+
+Informations géographiques et démographiques.
+
+### Bien
+
+Caractéristiques détaillées des biens immobiliers :
+
+- Type de bien
+- Surface
+- Nombre de pièces
+
+### Vente
+
+Historique des transactions immobilières :
+
+- Date de vente
+- Valeur foncière
+- Bien concerné
+
+Cette structure garantit la cohérence et la maintenabilité de la base.
+
+---
+
+## Analyses réalisées
+
+La base de données a permis de répondre à plusieurs problématiques métier :
+
+### Analyse de l'activité immobilière
+
+- Nombre total de ventes
+- Répartition des ventes par région
+- Évolution des transactions dans le temps
+
+### Analyse des prix
+
+- Prix moyen au mètre carré
+- Classement des départements les plus chers
+- Comparaison entre types de biens
+- Analyse des écarts de prix selon le nombre de pièces
+
+### Analyse territoriale
+
+- Classement des régions
+- Communes les plus dynamiques
+- Transactions rapportées à la population
+- Comparaisons géographiques.
+
+---
+
+## Principaux enseignements
+
+### Forte concentration du marché en Île-de-France
+
+Les analyses mettent en évidence un volume de transactions particulièrement important en Île-de-France ainsi qu'un prix moyen au mètre carré significativement supérieur à la moyenne nationale.
+
+### Disparités territoriales importantes
+
+Les écarts observés entre régions et départements démontrent l'importance d'une analyse localisée du marché immobilier.
+
+### Corrélation entre caractéristiques et valeur du bien
+
+La surface, le type de bien et le nombre de pièces apparaissent comme des variables structurantes pour l'analyse du marché et la future modélisation prédictive. 
+
+---
+
+## Valeur apportée au métier
+
+Ce projet a permis de doter l'entreprise :
+
+- D'une base de données centralisée et exploitable
+- D'un référentiel de données documenté
+- D'une architecture fiable et évolutive
+- D'un socle analytique permettant la production d'indicateurs immobiliers
+- D'une fondation technique pour de futurs projets de data science et de valorisation immobilière
