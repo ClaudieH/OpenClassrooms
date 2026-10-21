@@ -1,200 +1,166 @@
-# 🎓 Projet 8 - Analysez l’évolution des profils sociodémographiques avec DBT
+# Analyse de l'évolution des profils sociodémographiques avec DBT
 
-----------------------
- La documentation complète du projet, générée automatiquement avec DBT Docs, est accessible ici :
- 
-🔗 [Consulter la documentation DBT](https://claudieh.github.io/dbt-docs/#!/overview)
- 
+> **Compétences mobilisées :** DBT • Snowflake • SQL • Data Engineering • Data Quality • Data Governance • RGPD • Analyse de données
+
+## Présentation du projet
+
+Dans le cadre d'une mission réalisée pour OpenClassrooms, j'ai conçu un pipeline de transformation de données avec DBT afin d'analyser l'évolution du profil sociodémographique des apprenants des parcours Data sur plusieurs années.
+
+L'objectif était de produire des données fiables, documentées et réutilisables afin d'aider les équipes pédagogiques et stratégiques à mieux comprendre les profils des apprenants et à évaluer l'accessibilité des formations. 
+
+### Documentation DBT
+
+La documentation technique générée automatiquement avec DBT Docs est disponible ici :
+
+🔗 ** [Consulter la documentation DBT](https://claudieh.github.io/dbt-docs/#!/overview)**
+
 Cette documentation présente :
- 
+
 - Le lineage des modèles
 - Les sources de données
 - Les transformations réalisées
 - Les dépendances entre modèles
 - Les tests de qualité des données
-- Les descriptions des tables et des colonnes
+- Les descriptions des tables et colonnes
 
------------------
+---
 
-## Contexte
- 
-Dans le cadre de la formation Data Analyst OpenClassrooms, j'ai intégré fictivement l'équipe Data d'OpenClassrooms afin d'étudier l'évolution du profil sociodémographique des apprenants inscrits aux parcours Data sur une période de quatre ans.
- 
-L'objectif de cette mission était de produire une analyse fiable et exploitable permettant d'aider les équipes pédagogiques et stratégiques à mieux comprendre les profils des apprenants et à évaluer l'accessibilité des formations.
- 
-Pour répondre à cet enjeu, j'ai conçu un pipeline de transformation des données avec DBT, enrichi les données internes avec des données publiques de l'INSEE et veillé au respect des exigences RGPD tout au long du projet.
- 
+## Problématique
+
+**Comment construire un pipeline analytique fiable permettant d'étudier l'évolution des profils des apprenants tout en garantissant qualité des données, traçabilité et conformité RGPD ?**
+
 ---
- 
-## 🎯 Objectifs du projet
- 
-### Préparation et fiabilisation des données
- 
-- Analyser et comprendre les données issues des systèmes internes.
-- Nettoyer les données et corriger les incohérences.
-- Contrôler la qualité des données.
-- Garantir la conformité RGPD des informations exploitées.
-- Structurer les données afin de permettre leur réutilisation dans le temps.
- 
-### Construction du pipeline de transformation
- 
-- Développer un pipeline de transformation avec DBT.
-- Documenter l'ensemble des traitements réalisés.
-- Assurer la reproductibilité des analyses.
-- Mettre en œuvre des tests de qualité des données.
- 
-### Enrichissement des données
- 
-- Intégrer des données externes issues de l'INSEE.
-- Comparer les caractéristiques des apprenants avec celles de la population française.
-- Construire des indicateurs sociodémographiques pertinents.
- 
-### Analyse des profils étudiants
- 
-- Étudier l'évolution de la répartition des apprenants selon :
-- l'âge ;
-- le genre ;
-- la localisation géographique ;
-- les caractéristiques sociodémographiques disponibles.
- 
-- Mettre en évidence les tendances observées sur plusieurs années.
-- Identifier des pistes d'amélioration concernant l'accessibilité des formations.
- 
----
- 
-## 🛠️ Outils utilisés
- 
+
+## Environnement technique
+
 ### Data Engineering
- 
+
 - DBT (Data Build Tool)
- 
-### Data Warehouse
- 
 - Snowflake
- 
+
 ### Analyse de données
- 
+
 - SQL
- 
-### Sources de données
- 
+
+### Sources
+
 - Données internes OpenClassrooms
-- Données INSEE
- 
-### Documentation
- 
-- Documentation DBT
-- Dictionnaire des données
-- Présentation PowerPoint
- 
-### Gouvernance des données
- 
-- Contrôle qualité
-- Validation des données
-- Conformité RGPD
- 
----
- 
-## 📈 Réalisations
- 
-### Analyse et préparation des données
- 
-- Exploration des jeux de données internes.
-- Vérification de la qualité des données.
-- Traitement des valeurs manquantes.
-- Harmonisation des formats.
-- Contrôle des incohérences.
- 
-### Construction du pipeline DBT
- 
-- Création des modèles de transformation.
-- Structuration des traitements par couches.
-- Documentation du pipeline.
-- Mise en place de tests de données.
-- Validation des résultats produits.
- 
-### Enrichissement des données
- 
-- Intégration de données démographiques externes.
-- Croisement des données OpenClassrooms avec les indicateurs INSEE.
-- Création de nouveaux indicateurs d'analyse.
- 
-### Analyse sociodémographique
- 
-Étude de :
- 
-- l'évolution du nombre d'apprenants ;
-- la répartition par tranche d'âge ;
-- la répartition géographique ;
-- l'évolution de la mixité ;
-- les tendances observées au fil des années.
- 
-### Communication des résultats
- 
-- Sélection d'indicateurs pertinents.
-- Production de visualisations adaptées.
-- Présentation des analyses à un public non technique.
-- Formulation de recommandations exploitables.
- 
----
- 
-## ✅ Compétences acquises
- 
-### DBT
- 
-- Création de modèles de transformation.
-- Organisation d'un projet DBT.
-- Documentation des traitements.
-- Utilisation des tests de qualité intégrés.
-- Industrialisation des transformations de données.
- 
-### Snowflake
- 
-- Exploitation d'un Data Warehouse moderne.
-- Interrogation des données avec SQL.
-- Gestion des données analytiques.
- 
-### SQL
- 
-- Écriture de requêtes complexes.
-- Création de tables intermédiaires.
-- Jointures et agrégations.
-- Construction d'indicateurs analytiques.
- 
-### Data Quality
- 
-- Contrôle qualité des données.
-- Détection des anomalies.
-- Validation de la cohérence des données.
-- Mise en place de règles de gestion.
- 
-### Gouvernance des données
- 
-- Application des principes RGPD.
-- Anonymisation et protection des données.
-- Documentation des traitements.
-- Traçabilité des transformations.
- 
-### Analyse de données
- 
-- Analyse statistique descriptive.
-- Construction d'indicateurs sociodémographiques.
-- Interprétation de tendances longitudinales.
-- Comparaison de populations.
- 
-### Communication & Storytelling
- 
-- Vulgarisation des analyses.
-- Création de supports de présentation.
-- Mise en valeur des enseignements clés.
-- Communication à destination de publics non techniques.
- 
+- Données publiques INSEE
+
 ---
 
-## 🚀 Résultat
- 
-Ce projet m'a permis d'acquérir une première expérience concrète en Data Engineering avec DBT et Snowflake, tout en renforçant mes compétences en qualité des données et en gouvernance.
- 
-J'ai appris à construire un pipeline de transformation reproductible, documenté et fiable, tout en conciliant les besoins analytiques, les exigences réglementaires et les enjeux métiers.
- 
-Cette mission a également renforcé ma sensibilité aux problématiques de qualité des données, un sujet essentiel pour produire des analyses pertinentes et fiables dans un contexte décisionnel.
+## Travaux réalisés
+
+### Préparation des données
+
+- Contrôle de la qualité des données
+- Gestion des valeurs manquantes
+- Harmonisation des formats
+- Standardisation des données géographiques et démographiques
+- Contrôle des identifiants et des doublons
+
+### Construction du pipeline DBT
+
+- Création des modèles de transformation
+- Structuration des couches Staging, Intermediate et Marts
+- Documentation complète des traitements
+- Mise en place de tests de qualité automatisés
+- Génération de la documentation DBT
+
+### Enrichissement des données
+
+- Intégration de données démographiques INSEE
+- Croisement avec les données OpenClassrooms
+- Construction d'indicateurs sociodémographiques exploitables
+
+### Analyse des profils
+
+Étude de l'évolution :
+
+- Du nombre d'apprenants
+- De la répartition hommes/femmes
+- De la répartition géographique
+- Des tendances observées sur plusieurs années
+
+---
+
+## Principaux résultats
+
+### Évolution des effectifs
+
+L'analyse met en évidence une baisse du nombre d'inscriptions après 2022 suivie d'un regain d'activité à partir de 2024 pour les parcours Data d'OpenClassrooms.
+
+### Différences de représentation selon le parcours
+
+La comparaison entre les formations OpenClassrooms et les parcours académiques traditionnels montre une représentation féminine plus importante dans les cursus classiques, alors que les parcours OpenClassrooms restent majoritairement masculins sur la période étudiée.
+
+### Répartition géographique stable
+
+La distribution géographique des apprenants reste relativement stable au fil du temps et suit globalement les grands bassins de population.
+
+### Accessibilité des formations
+
+L'étude met en évidence l'importance de la formation à distance pour faciliter l'accès aux parcours Data sur l'ensemble du territoire, notamment dans les régions éloignées des principaux pôles universitaires.
+
+---
+
+## Valeur apportée
+
+Cette mission a permis :
+
+- De fiabiliser les données utilisées pour les analyses
+- De documenter l'ensemble des transformations
+- De rendre les analyses reproductibles
+- De comparer les profils OpenClassrooms avec des données nationales
+- De fournir aux équipes métier des indicateurs fiables pour le pilotage stratégique
+
+---
+
+## Compétences démontrées
+
+### Data Engineering
+
+- Développement de pipelines DBT
+- Documentation automatisée
+- Industrialisation des transformations
+
+### Data Quality
+
+- Contrôle qualité des données
+- Tests automatisés
+- Validation des règles métier
+
+### SQL & Snowflake
+
+- Requêtes analytiques
+- Jointures complexes
+- Création d'indicateurs
+
+### Gouvernance des données
+
+- Documentation
+- Traçabilité
+- Conformité RGPD
+
+### Analyse de données
+
+- Analyse sociodémographique
+- Analyse comparative
+- Interprétation de tendances
+
+---
+
+## Livrables
+
+- Projet DBT documenté
+- Documentation DBT Docs
+- Modèles SQL
+- Dictionnaire des données
+- Présentation des résultats
+- Recommandations métier
+
+---
+
+## Ce que démontre ce projet
+
+Ce projet illustre ma capacité à concevoir un pipeline de transformation de données moderne avec DBT, à mettre en œuvre des bonnes pratiques de qualité et de gouvernance des données, puis à produire des analyses fiables permettant de transformer des données brutes en informations exploitables pour la prise de décision.
