@@ -1,178 +1,143 @@
-# 🍷 Projet 6 - Optimisez la gestion des données d'une boutique avec Python
- 
-## Contexte
- 
-Dans le cadre de la formation Data Analyst OpenClassrooms, j'ai intégré fictivement l'entreprise BottleNeck, un marchand de vins prestigieux.
- 
-L'entreprise rencontre des difficultés dans l'exploitation de ses données en raison de la présence de plusieurs sources d'information indépendantes : un ERP, un site e-commerce et une table de correspondance entre les deux systèmes.
- 
-Ma mission consistait à centraliser ces différentes sources de données, améliorer leur qualité, puis réaliser des analyses commerciales afin d'aider le comité de direction dans ses prises de décisions.
- 
+# Optimisation de la qualité des données et analyse commerciale d'un e-commerce
+
+> **Compétences mobilisées :** Python • Pandas • Data Quality • Data Cleaning • EDA • Analyse Commerciale • Statistiques • Data Visualisation
+
+## Présentation du projet
+
+Dans le cadre d'une mission de conseil pour **BottleNeck**, distributeur de vins et spiritueux premium, j'ai été chargé de consolider plusieurs sources de données (ERP, site e-commerce et table de correspondance produits) afin de fiabiliser les données et produire des analyses commerciales destinées à la direction.
+
+L'objectif était double :
+
+- Améliorer la qualité et la cohérence des données.
+- Fournir une vision fiable des performances commerciales et de la gestion des stocks.
+
 ---
- 
-## 🎯 Objectifs du projet
- 
-### Phase 1 : Fiabilisation des données
- 
-- Rapprocher les données issues de l'ERP et du site e-commerce.
-- Exploiter une table de correspondance permettant d'associer les références produits entre les différents systèmes.
-- Identifier les anomalies présentes dans les données.
-- Détecter les erreurs de saisie, de calcul, de typage et de jointure.
-- Mettre en place des recommandations pour améliorer durablement la qualité des données.
- 
-### Phase 2 : Analyse des performances commerciales
- 
-- Calculer le chiffre d'affaires global.
-- Calculer le chiffre d'affaires par produit.
-- Identifier les produits générant le plus de revenus.
-- Réaliser une analyse de Pareto (20/80).
-- Analyser la gestion des stocks.
-- Étudier les marges commerciales.
-- Détecter les valeurs atypiques dans les prix.
-- Identifier les corrélations entre les différents indicateurs métier.
- 
+
+## Problématique
+
+**Comment fiabiliser des données provenant de plusieurs systèmes d'information afin de produire des indicateurs fiables pour le pilotage commercial ?**
+
 ---
- 
-## 🛠️ Outils utilisés
- 
-### Langage
- 
+
+## Sources de données
+
+- ERP (produits, prix, stocks)
+- Site e-commerce (ventes)
+- Table de correspondance des références produits
+
+Les trois sources ont été rapprochées afin de constituer une base analytique unique.
+
+---
+
+## Stack technique
+
 - Python
- 
-### Environnement
- 
-- Jupyter Notebook
- 
-### Bibliothèques Python
- 
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - SciPy
- 
-### Techniques d'analyse
- 
-- Nettoyage de données
-- Jointures de bases de données
-- Analyse exploratoire (EDA)
-- Détection de valeurs aberrantes
-- Analyse de corrélation
-- Statistiques descriptives
- 
+- Jupyter Notebook
+
 ---
- 
-## 📈 Réalisations
- 
-### Préparation et rapprochement des données
- 
-- Analyse des différentes sources de données.
-- Fusion des données ERP et e-commerce.
-- Utilisation de la table de correspondance pour relier les références produits.
-- Contrôle de la cohérence des informations.
- 
-### Contrôle qualité des données
- 
-- Recherche d'incohérences entre les systèmes.
-- Identification des valeurs manquantes.
-- Détection des erreurs de saisie.
-- Analyse des doublons potentiels.
-- Vérification des règles métier.
- 
-### Analyse du chiffre d'affaires
- 
-- Calcul du chiffre d'affaires par produit.
-- Calcul du chiffre d'affaires global.
-- Identification des références les plus rentables.
-- Analyse de la contribution de chaque produit aux ventes.
- 
-### Analyse des stocks
- 
-- Évaluation de l'état des stocks.
-- Analyse de la rotation des produits.
-- Étude des niveaux de stock disponibles.
-- Identification des risques de rupture ou de surstock.
- 
-### Détection des valeurs aberrantes
- 
-- Utilisation de l'écart interquartile (IQR).
-- Analyse des Z-Scores.
-- Création de boxplots.
-- Identification des produits atypiques en termes de prix.
- 
-### Analyse de corrélation
- 
-Étude des relations entre :
- 
-- Prix de vente
-- Prix d'achat
-- Marge
-- Taux de marge
-- Quantités vendues
-- Chiffre d'affaires
-- Niveau de stock
- 
----
- 
-## ✅ Compétences acquises
- 
-### Python
- 
-- Manipulation avancée de données avec Pandas.
-- Automatisation des traitements de données.
-- Utilisation des notebooks Jupyter.
-- Structuration d'un processus d'analyse reproductible.
- 
+
+## Travaux réalisés
+
 ### Data Quality
- 
-- Contrôle qualité des données.
-- Détection d'anomalies.
-- Gestion des données manquantes.
-- Vérification de la cohérence des données.
-- Documentation des corrections apportées.
- 
-### Analyse exploratoire des données (EDA)
- 
-- Analyse descriptive.
-- Création d'indicateurs métier.
-- Analyse des distributions statistiques.
-- Analyse des performances commerciales.
- 
-### Data Visualisation
- 
-- Création de boxplots.
-- Représentation de corrélations.
-- Construction de graphiques d'aide à la décision.
-- Communication des résultats aux parties prenantes.
- 
-### Analyse métier
- 
-- Calcul et interprétation du chiffre d'affaires.
-- Analyse de rentabilité des produits.
-- Analyse de Pareto (20/80).
-- Évaluation des marges commerciales.
-- Analyse de la gestion des stocks.
- 
-### Statistiques
- 
-- Détection de valeurs aberrantes.
-- Analyse de corrélation.
-- Utilisation du Z-Score.
-- Utilisation de l'écart interquartile (IQR).
- 
-### Gouvernance des données
- 
-- Formalisation des anomalies détectées.
-- Proposition de recommandations d'amélioration.
-- Documentation des règles de gestion.
-- Sensibilisation aux enjeux de qualité des données.
- 
+
+- Contrôle de cohérence des données
+- Détection et correction d'erreurs de saisie
+- Gestion des valeurs manquantes
+- Contrôle des doublons
+- Fusion des différentes sources
+
+### Analyse commerciale
+
+- Calcul du chiffre d'affaires
+- Analyse des ventes par produit
+- Analyse de Pareto (80/20)
+- Analyse des stocks
+- Étude des marges commerciales
+
+### Analyse statistique
+
+- Détection des valeurs atypiques (IQR, Z-score)
+- Analyse des distributions
+- Étude des corrélations entre les indicateurs métier
+
 ---
- 
-## 🚀 Résultat
- 
-Ce projet m'a permis de consolider mes compétences en Python appliquées à la qualité et à l'analyse des données.
- 
-J'ai particulièrement apprécié travailler sur l'identification des anomalies et le rapprochement de plusieurs sources de données, deux sujets qui me tiennent particulièrement à cœur. Cette mission a renforcé ma conviction qu'une analyse pertinente repose avant tout sur des données fiables, cohérentes et correctement documentées.
- 
-J'ai également développé mes compétences en analyse statistique, en détection de valeurs aberrantes et en analyse commerciale afin de produire des recommandations concrètes à destination des décideurs.
+
+## Principaux résultats
+
+### Fiabilisation des données
+
+L'analyse a permis d'identifier plusieurs anomalies :
+
+- Stocks incohérents
+- Prix négatifs
+- Références produits non appariées
+- Valeurs manquantes entre les différents systèmes
+
+Ces anomalies ont été corrigées avant la phase d'analyse.
+
+### Performance commerciale
+
+- **143 680 € de chiffre d'affaires** générés sur la période étudiée.
+- **5 751 produits vendus**.
+- Les vins représentent près de **95 % des volumes de vente**.
+
+### Gestion des stocks
+
+- Stock moyen estimé à **3,4 mois de couverture**.
+- Valorisation totale du stock de **277 350 €**.
+- Identification de plusieurs références en situation de surstock.
+
+### Produits atypiques
+
+Les analyses statistiques ont mis en évidence plusieurs produits considérés comme "outliers" sur le prix. L'étude métier a confirmé qu'il s'agissait principalement de produits premium (grands crus, cognacs et champagnes d'exception) et non d'erreurs de données.
+
+---
+
+## Valeur apportée
+
+Cette mission a permis :
+
+- D'améliorer la fiabilité des données commerciales
+- De sécuriser les indicateurs utilisés par la direction
+- D'identifier des opportunités d'optimisation des stocks
+- De mettre en évidence les produits à forte valeur
+- De fournir des recommandations basées sur des données fiables
+
+---
+
+## Compétences démontrées
+
+### Data Quality
+
+- Nettoyage et fiabilisation des données
+- Contrôle de cohérence
+- Gestion des anomalies
+
+### Data Analysis
+
+- Analyse exploratoire (EDA)
+- Analyse commerciale
+- Analyse des marges
+- Analyse de Pareto
+
+### Statistiques
+
+- Détection d'outliers
+- Z-score
+- IQR
+- Corrélations
+
+### Business Analysis
+
+- Analyse de la rentabilité
+- Analyse des stocks
+- Identification de leviers de performance
+
+## Ce que démontre ce projet
+
+Ce projet illustre ma capacité à transformer des données hétérogènes et peu fiables en une base analytique exploitable, puis à produire des analyses business permettant d'améliorer le pilotage commercial et la prise de décision.
