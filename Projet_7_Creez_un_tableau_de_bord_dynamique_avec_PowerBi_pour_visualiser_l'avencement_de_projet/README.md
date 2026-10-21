@@ -114,10 +114,62 @@ L'analyse a permis d'identifier :
 Le tableau de bord a également permis de mettre en évidence une dérive importante des coûts sur la phase de test de certains projets IT, avec un écart dépassant 500 % par rapport aux prévisions budgétaires.
 
 ---
-
 ## Valeur métier apportée
 
 Cette solution permet aux équipes PMO de :
 
-- Visualiser rapidement l'état du portefeuille projets ;
--
+- Visualiser rapidement l'état du portefeuille projets
+- Détecter les écarts budgétaires
+- Identifier les retards opérationnels
+- Prioriser les actions correctives
+- Améliorer le pilotage global des projets
+
+---
+
+## Compétences démontrées
+
+### Business Intelligence
+
+- Conception de tableaux de bord Power BI
+- Création de KPI décisionnels
+- Design de dashboards
+
+### Data Preparation
+
+- Transformation de données avec Power Query
+- Automatisation des traitements
+- Contrôle qualité des données
+
+### Data Modeling
+
+- Modélisation en étoile
+- Relations entre tables
+- Optimisation des performances
+
+### Business Analysis
+
+- Recueil des besoins utilisateurs
+- Traduction des besoins métier en indicateurs
+- Analyse de la performance projet
+
+### Data Storytelling
+
+- Construction d'une narration analytique
+- Mise en évidence des risques
+- Recommandations orientées décision
+
+---
+
+## Livrables
+
+- Tableau de bord Power BI interactif
+- Product Strategy Canvas
+- Documentation du modèle de données
+- Documentation de mise à jour
+- Recommandations métier
+
+---
+
+## Ce que démontre ce projet
+
+Ce projet illustre ma capacité à accompagner un besoin métier de bout en bout : de l'analyse des besoins utilisateurs jusqu'à la conception d'un tableau de bord décisionnel sous Power BI, en intégrant la préparation des données, la modélisation et la restitution d'insights actionnables pour les décideurs.
